@@ -1,0 +1,40 @@
+<div class="container-xl">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Achetez Par <b>Catégorie</b></h2>
+      <a routerLink="/categorieList" class="btn btn-primary" style="margin-left: 900px;">Voir tous les catégories</a>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" [class.active]="i === 0" *ngFor="let category of categories.slice(0, 3); let i = index"></li>
+        </ol>        
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+          <div class="item carousel-item" *ngFor="let category of categories.slice(0, 3); let i = index" [class.active]="i === 0">
+            <div class="row">
+              <div class="col-sm-4" *ngFor="let category of categories.slice(i * 3, (i + 1) * 3)">
+                <div class="thumb-wrapper">
+                  <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                  <div class="img-box">
+                    <img [src]="category.image" alt="{{ category.name }} Image">
+                  </div>
+                  <div class="thumb-content">
+                    <h4>{{ category.name }}</h4>
+                    <a (click)="goToProduct(category.id!)" class="btn btn-primary">Liste des Produits</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

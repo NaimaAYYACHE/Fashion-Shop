@@ -1,0 +1,85 @@
+<app-header-component></app-header-component>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Colonne pour le composant de la barre latérale -->
+        <div class="col-md-2 pl-0 mb-0 pb-0 p-0 custom-md-width">
+            <app-admin-home></app-admin-home>
+        </div>
+
+        <!-- Colonne pour le formulaire d'ajout d'article -->
+        <div class="col-md-9 custom-md-9-width">
+            <form class="form" (ngSubmit)="updateUser()">
+                <p class="title">Modifier un Utilisateur</p>
+                <div class="row">
+                    <!-- Colonne pour le nom -->
+                    <div class="col-md-4">
+                            <label>
+                                <input class="input" type="text" required="" style="width: 320px; margin-right: 5px;" [(ngModel)]="user.nom" name="nom">
+                                <span>Nom </span>
+                            </label>
+                    </div>
+                
+                    <!-- Colonne pour le prénom -->
+                    <div class="col-md-4">
+                            <label>
+                                <input class="input" type="text" required="" style="width: 320px; margin-right: 8px;" [(ngModel)]="user.prenom" name="prenom">
+                                <span>Prénom</span>
+                            </label>
+                    </div>
+                
+                    <!-- Colonne pour la date de naissance -->
+                    <div class="col-md-4">
+                            <label>
+                                <input class="input" type="date" required="" style="width: 320px; margin-right: 8px;" [(ngModel)]="user.dateNaiss" name="dateNaiss">
+                            </label>
+                    </div>
+                </div>
+                
+
+                <!-- Groupe pour "Nom du produit", "Quantité", "Prix", "Remise" -->
+                <!-- Groupe pour "Nom du produit", "Quantité", "Prix", "Remise" -->
+                <div class="form-group">
+                    <label>
+                        <input class="input" type="text" required="" style="width: 250px;" [(ngModel)]="user.ville" name="ville">
+                        <span>Ville</span>
+                    </label>
+                    <label>
+                        <input class="input" type="text" style="width: 245px; margin-left: 10px;" required="" [(ngModel)]="user.codePostal" name="codePostal" >
+                        <span style="margin-left: 10px;">Code Postal</span>
+                    </label>
+                    <label>
+                        <input class="input" type="tel" style="width: 245px; margin-left: 10px;" required="" [(ngModel)]="user.telephone" name="telephone">
+                        <span style="margin-left: 10px;">Telephone</span>
+                    </label>
+                    <label style="width: 245px; margin-left: 10px;">
+                        <select class="input" required="" name="role" [(ngModel)]="user.role!.id">
+                            <option *ngFor="let rol of roles" [value]="rol.id">{{rol.nom}}</option>
+                            <!-- Ajouter d'autres catégories au besoin -->
+                        </select>
+                    </label>
+                </div>
+
+                <!-- Groupe pour "Description" et "Choisir des images" -->
+    
+                <div class="form-group description-images-group">
+                    <div class="flex-container">
+                    <label>
+                        <input class="input" type="email" style="width: 500px;" required="" [(ngModel)]="user.email" name="email">
+                        <span>Email</span></label>
+                      <label >
+                        <input class="input" type="text" style="width: 500px; margin-left: 2px;" required="" [(ngModel)]="user.adresse" name="adresse" >
+                        <span>Adresse</span>
+                       </label>
+                    </div>
+                    <label class="flex-container">
+                        <input class="input" type="file" accept="image/*" multiple  [(ngModel)]="user.image" name="image">
+                    </label>
+                </div>
+               <button class="submit" type="submit">Modifier</button>
+             </form>
+         </div>
+      </div>
+    </div>
+  <router-outlet></router-outlet>
+<app-footer></app-footer>

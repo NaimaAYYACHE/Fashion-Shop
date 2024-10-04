@@ -1,0 +1,244 @@
+
+/* categorie.component.css */
+.container-xl{
+    margin-bottom: 100px;
+}
+.btnn {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #7ac400;
+    padding: 15px 30px;
+    line-height: 16px;
+    border-radius: 10px;
+    background: #7ac400;
+    text-decoration: none;
+}
+.thumb-content {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+
+h2 {
+    color: #000;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 30px 0 15px;
+} 
+
+
+.category-image {
+    /* Définissez une taille spécifique pour toutes les images */
+    width: 100%;
+    height: 500px; /* Ajustez la hauteur selon vos préférences */
+    object-fit: cover; /* Optionnel : assurez-vous que l'image couvre la zone spécifiée */
+    margin-bottom: 10px;
+}
+
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+
+.carousel .item .img-box {
+    height: 200px; /* Ajustez la hauteur selon vos préférences */
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+.carousel .item img {
+    max-width: 600px;
+    max-height: 250px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carousel .item h4 {
+	font-size: 24px;
+}
+.h4{
+    margin-top: 10px;
+}
+.carousel .item h4, .carousel .item p, .carousel .item ul {
+	margin-bottom: 5px;
+}
+.carousel .thumb-content h4 {
+    margin-bottom: 10px;
+}
+.carousel .thumb-content .btn {
+	color: #7ac400;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: none;
+	border: 1px solid #7ac400;
+    padding: 15px 30px;
+	margin-top: 10px;
+	line-height: 16px;
+	border-radius: 20px;
+}
+.carousel .thumb-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
+	color: #fff;
+	background: #7ac400;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.carousel .thumb-content .btn i {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.carousel .item-price {
+    font-size: 16px; /* Ajustez la taille du texte selon vos préférences */
+    padding: 5px 0;
+}
+.carousel .item-price strike {
+	opacity: 0.7;
+	margin-right: 5px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	height: 44px;
+	width: 40px;
+	background: #7ac400;	
+	margin: auto 0;
+	border-radius: 4px;
+	opacity: 0.8;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {
+	background: #78bf00;
+	opacity: 1;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 36px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -19px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: #fff;
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -2px;
+}
+.carousel-control-next i {
+	margin-right: -4px;
+}		
+.carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	border-radius: 1px;
+	background: #7ac400;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+}
+.carousel {
+    margin: 50px auto;
+    padding: 0 70px;
+}
+
+
+.carousel .item {
+    color: #747d89;
+    min-height: 325px;
+    text-align: center;
+    overflow: hidden;
+}
+.carousel .thumb-wrapper {
+    padding: 25px 15px;
+    background: #fff;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 400px;
+    width: 400px;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+   
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: #6a9835;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #629e22;
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    top: 50%; /* Center the icon vertically */
+    transform: translate(-50%, -50%);
+    width: 1rem;
+    height: 1rem;
+   }

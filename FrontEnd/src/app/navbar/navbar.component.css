@@ -1,0 +1,307 @@
+/* Ajoutez ces styles dans votre fichier styles.css ou styles.scss */
+
+/* Style pour la barre de navigation */
+.navbar {
+    background-color: #000; /* Noir */
+  }
+  
+  /* Style pour le fond light-blue */
+  .bg-light-blue {
+    background-color: #add8e6; /* Light Blue */
+  }
+  .navbar-nav .nav-link {
+    font-weight: bold; /* Texte en gras */
+    color: #fff; /* Couleur du texte en blanc */
+    font-size: 13px;
+  }
+  
+  /* Style pour les liens dans la liste déroulante */
+  .navbar-nav .dropdown-menu a {
+    color: #fff; /* Couleur du texte en blanc */
+  }
+  /* Style pour la barre de recherche */
+  .navbar-form {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-nav{
+    margin-left: 60px;
+  }
+  /* Style pour le champ de recherche */
+  .form-control {
+    border-radius: 0; /* Bords carrés */
+    width: 400px;
+  }
+  
+  /* Style pour le bouton de recherche */
+  .btn-outline-light {
+    border-radius: 0; /* Bords carrés */
+  }
+  
+  /* Style pour les icônes dans la barre de navigation */
+  .navbar-nav .nav-link {
+    padding: 8px 15px; /* Espacement entre les icônes */
+  }
+  
+  /* Style pour les icônes dans la liste déroulante */
+  .dropdown-item {
+    padding: 8px 15px; /* Espacement entre les icônes */
+  }
+  
+  /* Style pour la liste déroulante */
+  .navbar-nav .dropdown-menu {
+    border-radius: 0; /* Bords carrés */
+  }
+  
+  /* Style pour les liens dans la liste déroulante */
+  .navbar-nav .dropdown-menu a {
+    color: #fff; /* Couleur du texte */
+  }
+  
+  /* Style pour le logo */
+  .navbar-brand {
+    font-size: 24px; /* Taille de la police */
+    color: #fff; /* Couleur du texte en blanc */
+    margin-right: 20px; /* Marge à droite pour l'espacement */
+    font-family: Georgia, serif;
+  }
+  .fas{
+    font-size: 15px;
+  }
+  /* Style pour le texte "Shop" en gras */
+  .bold {
+    font-weight: bold;
+    font-family: Georgia, serif;
+  }
+  /* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+  }
+  /* styling of whole input container */
+  .form {
+    --timing: 0.3s;
+    --width-of-input: 300px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #6a9835;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+  }
+  /* styling of Input */
+  .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+  }
+  /* styling of animated border */
+  .form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+  /* Hover on Input */
+  .form:focus-within {
+    border-radius: var(--after-border-radius);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  /* here is code of animated border */
+  .form:focus-within:before {
+    transform: scale(1);
+  }
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button shown when typing */
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* sizing svg icons */
+  .form svg {
+    width: 17px;
+    margin-top: 3px;
+  }
+  
+  /* Style pour le texte de la barre de navigation */
+  .navbar-nav .nav-link {
+    font-weight: bold; /* Texte en gras */
+  }
+  
+  /* Style pour les icônes dans la barre de recherche et les boutons */
+  .bi {
+    font-size: 15px; /* Taille des icônes */
+    font-family: Georgia, serif;
+  }
+  
+  /* Style pour les liens au survol */
+  .navbar-nav .nav-item:hover {
+    background-color: #6a9835; /* Couleur de fond gris au survol */
+    border-radius: 15px; /* Rayon de bord arrondi */
+  }
+  
+  /* Style pour le texte et les icônes des éléments de navigation au survol */
+  .navbar-nav .nav-item:hover .nav-link {
+    color: #fff; /* Couleur du texte en blanc */
+  }
+  
+  /* Style pour les icônes dans les éléments de navigation au survol */
+  .navbar-nav .nav-item:hover .nav-link .icon {
+    color: #fff; /* Couleur de l'icône en blanc */
+  }
+  
+  /* Style pour les liens actifs */
+  .navbar-nav .nav-item.active .nav-link {
+    background-color:  rgba(245, 73, 144); /* Couleur de fond des liens actifs */
+  }
+  
+  /* Style pour le container des boutons */
+  .button-container {
+    display: flex;
+    background-color: rgba(245, 73, 144);
+    width: 250px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+              rgba(245, 73, 144, 0.5) 5px 10px 15px;
+  }
+  
+  /* Style pour les boutons */
+  .button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  
+  /* Style pour les boutons au survol */
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Style pour les icônes dans les boutons */
+  .icon {
+    font-size: 20px;
+  }
+  /* Ajoutez ces styles dans votre fichier styles.css ou styles.scss */
+
+/* Style pour la barre de recherche */
+.form-control {
+    border-radius: 25px; /* Bord arrondi pour la barre de recherche */
+    transition: background-color 0.3s ease; /* Transition de couleur au survol */
+  }
+  
+  /* Style pour le fond de la barre de recherche au survol */
+  
+  
+  /* Style for dropdown */
+.navbar .nav-item.dropdown {
+  position: relative;
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar .nav-item.dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 150px;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+}
+
+.navbar .nav-item.dropdown .dropdown-menu a {
+  color: #777;
+  padding: 8px 20px;
+  line-height: normal;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .nav-item.dropdown .dropdown-menu a:hover, 
+.navbar .nav-item.dropdown .dropdown-menu a:active {
+  color: #333;
+  background-color: #f8f9fa;
+}
+.navbar .badge {
+	color: #fff;
+	background: #f44336;
+	font-size: 11px;
+	border-radius: 20px;
+	position: absolute;
+	min-width: 10px;
+	padding: 4px 6px 0;
+	min-height: 18px;
+	top: 5px;
+}
+
+/* Ajoutez ces styles dans votre feuille de style CSS */
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-item.dropdown img.avatar {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: -8px 0;
+  float: left;
+  margin-right: 10px;
+}

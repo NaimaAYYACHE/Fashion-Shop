@@ -1,0 +1,46 @@
+#slider-container-2 {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    height: 550px;
+}
+
+#slider-2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#slider-2 .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+#slider-2 img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+#prev-2,
+#next-2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    z-index: 1;
+}
+
+#prev-2 {
+    left: 10px;
+}
+
+#next-2 {
+    right: 10px;
+}

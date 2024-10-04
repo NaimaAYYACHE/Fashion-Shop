@@ -1,0 +1,7 @@
+<div id="slider-container-1">
+    <div id="slider-1" [style.transform]="'translateX(' + translateValue1 + ')'">
+        <div class="slide" *ngFor="let imag of image">
+        <img [src]="imag" alt="Slide">
+      </div>
+    </div>
+</div>

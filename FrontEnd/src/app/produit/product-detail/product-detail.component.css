@@ -1,0 +1,192 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+
+* {
+  box-sizing: border-box;
+}
+ .price span {
+  color: #888;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+ .price {
+  color: #888;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.card {
+  width: 90%;
+  max-width: 950px;
+  height: 500px;
+  background: white;
+  margin: 10px auto; /* Ajustez la marge pour réduire l'espace */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre plus forte */
+}
+
+
+.card nav {
+  width: 100%;
+  color: #727272;
+  text-transform: uppercase;
+  padding: 20px;
+  border-bottom: 2px solid #efefef;
+  font-size: 12px;
+}
+
+.card nav svg.heart {
+  height: 24px;
+  width: 24px;
+  float: right;
+  margin-top: -3px;
+  cursor: pointer;
+}
+/* Ajoutez ce style à votre feuille de style CSS */
+img {
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Pour couvrir la largeur du conteneur parent */
+  height: 100%; /* Pour couvrir la hauteur du conteneur parent */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card nav svg.heart:hover {
+  fill: red;
+}
+
+.card nav svg.arrow {
+  float: left;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+.card .content {
+  display: flex;
+}
+
+.card .photo {
+  padding: 20px;
+  width: 45%;
+  text-align: center;
+
+  height: 430px;
+}
+
+.card .photo img {
+  width: 100%;  /* Image prendra 100% de la largeur de son conteneur parent */
+  height: 100%; /* Pour maintenir le rapport hauteur/largeur */
+  object-fit: contain
+}
+
+.back-link {
+  /* Ajoutez votre style personnalisé ici */
+  text-decoration: none; /* Pour enlever le soulignement par défaut des liens */
+  color: #727272;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  /* Autres styles... */
+}
+.fa{
+   size: 15px;
+   color: #727272; 
+   margin-right: 4px;
+}
+.fa{
+  color: #6a9835;
+}
+.back-link:hover {
+  /* Style au survol */
+    color: #6a9835; /* Couleur de fond gris au survol */
+  /* Autres styles au survol... */
+}
+.card .description {
+  padding: 30px;
+  width: 55%;
+  border-left: 2px solid #efefef;
+}
+
+.card .description h1 {
+  color: #515151;
+  font-weight: 300;
+  padding-top: 15px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.card .description h2 {
+  color: #515151;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.card .description h4 {
+  margin: 0;
+  color: #727272;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.card .description p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #727272;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.card .description .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card .description button {
+  outline: 0;
+  border: 0;
+  background: none;
+  border: 1px solid #d9d9d9;
+  padding: 8px 0px;
+  color: #515151;
+  text-transform: uppercase;
+  width: 48%;
+  font-family: inherit;
+  font-weight: 500;
+  background-color: #aedaa6;
+}
+
+.card .description button a{
+  outline: 0;
+  border: 0;
+  background: none;
+  padding: 8px 0px;
+  color: #515151;
+  text-transform: uppercase;
+  width: 48%;
+  font-family: inherit;
+  font-weight: 500;
+  background-color: #aedaa6;
+}
+
+.card .description button a:hover {
+  color: #aedaa6;
+  background-color: #515151;
+  cursor: pointer;
+  text-decoration: none;
+}
+.card .description button:hover{
+  border: 1px solid #aedaa6;
+  color: #aedaa6;
+  background-color: #515151;
+  cursor: pointer;
+}

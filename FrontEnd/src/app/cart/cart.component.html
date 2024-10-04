@@ -1,0 +1,108 @@
+<app-header-component></app-header-component>
+
+<div class="container mt-5 p-3 rounded cart">
+  <div class="row no-gutters">
+    <div class="col-md-8">
+      <div class="product-details mr-2">
+        <div class="d-flex flex-row align-items-center">
+          <a routerLink="/productList" class="back-link"><i class="fa fa-arrow-left"></i>Back to all Plants</a>
+        </div>
+        <hr>
+        <h6 class="mb-0">Shopping cart</h6>
+
+        <div *ngFor="let product of cartProducts" class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
+          <div class="d-flex flex-row align-items-center">
+            <img class="rounded" [src]="product.produit?.image" width="40" alt="{{ product.produit?.name }}">
+            <div class="ml-2">
+              <span class="font-weight-bold d-block">{{ product.produit?.name }}</span>
+              <span class="font-weight-bold d-block">{{ product.prix }} <b class="spec">DH</b></span>
+            </div>
+          </div>
+          <div class="d-flex flex-row align-items-center">
+                <button style ="background-color: #fff; border: none;" (click)="decrementQuantity(product)" class="quantity-btn mr-2">-</button>
+                <span class="d-block mr-2">{{ product.quantite }}</span>
+                <button style ="background-color: #fff; border: none;" (click)="incrementQuantity(product)" class="quantity-btn mr-2">+</button>
+                <button class="Bnt" (click)="deleteProduct(product.id!)">
+                    <svg class="svg" viewBox="0 0 448 512">
+                        <!-- Icône de suppression -->
+                        <path
+                            d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"
+                        ></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="payment-info">
+          <div class="d-flex justify-content-between align-items-center">
+            <span>Card details</span>
+          </div>
+          <span class="type d-block mt-3 mb-1">Card type</span>
+  
+          <label class="radio">
+            <input type="radio" name="card" value="payment" checked>
+            <span><img width="30" src="https://img.icons8.com/color/48/000000/mastercard.png"/></span>
+          </label>
+  
+          <label class="radio">
+            <input type="radio" name="card" value="payment">
+            <span><img width="30" src="https://img.icons8.com/officel/48/000000/visa.png"/></span>
+          </label>
+  
+          <label class="radio">
+            <input type="radio" name="card" value="payment">
+            <span><img width="30" src="https://img.icons8.com/ultraviolet/48/000000/amex.png"/></span>
+          </label>
+  
+          <label class="radio">
+            <input type="radio" name="card" value="payment">
+            <span><img width="30" src="https://img.icons8.com/officel/48/000000/paypal.png"/></span>
+          </label>
+  
+          <div>
+            <label class="credit-card-label">Name on card</label>
+            <input type="text" class="form-control credit-inputs" placeholder="Name" [(ngModel)]="cardName">
+          </div>
+  
+          <div>
+            <label class="credit-card-label">Card number</label>
+            <input type="text" class="form-control credit-inputs" placeholder="0000 0000 0000 0000" [(ngModel)]="cardNumber">
+          </div>
+  
+          <div class="row">
+            <div class="col-md-6">
+              <label class="credit-card-label">Date</label>
+              <input type="text" class="form-control credit-inputs" placeholder="MM/YYYY" [(ngModel)]="expiryDate">
+            </div>
+            <div class="col-md-6">
+              <label class="credit-card-label">CVV</label>
+              <input type="text" class="form-control credit-inputs" placeholder="342" [(ngModel)]="cvv">
+            </div>
+          </div>
+  
+          <hr class="line">
+  
+          <div class="d-flex justify-content-between information">
+            <span>Subtotal</span><span>{{ calculateSubtotal() | currency }}</span>
+          </div>
+  
+          <div class="d-flex justify-content-between information">
+            <span>Shipping</span><span>{{ shippingCost | currency }}</span>
+          </div>
+  
+          <div class="d-flex justify-content-between information">
+            <span>Total(Incl. taxes)</span><span>{{ calculateTotal() | currency }}</span>
+          </div>
+  
+          <button class="btn btn-primary-custom btn-block d-flex justify-content-between mt-3" type="button" (click)="addCommande()">
+            <span>{{ calculateTotal() | currency }}</span>
+            <span>Checkout<i class="fa fa-long-arrow-right ml-1"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>

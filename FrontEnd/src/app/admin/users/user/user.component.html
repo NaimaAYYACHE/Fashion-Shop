@@ -1,0 +1,92 @@
+<app-header-component></app-header-component>
+
+<div class="container-fluid">
+    <div class="row" >
+        <!-- Colonne pour le composant de la barre latérale -->
+        <div class="col-md-2 pl-0 mb-0 pb-0 p-0 custom-md-width">
+            <app-admin-home></app-admin-home>
+        </div>
+        <!-- Colonne pour la table -->
+        <div class="col-md-9 custom-md-9-width">
+            <!-- Bouton Apply Now -->
+            <button class="button" routerLink="/addUser">
+                Ajouter
+                <i class="fas fa-plus"></i>
+            </button>
+
+            <div class="card">
+                <div class="group">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                      <g>
+                        <path
+                          d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                        ></path>
+                      </g>
+                    </svg>
+                    <input class="input" type="search" placeholder="Search" [(ngModel)]="searchKeyword" (input)="searchUsers()"/>
+                  </div>
+                  
+                <!-- Contenu de la table -->
+                <table class="table table-hover custom-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Image</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Prenom</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Telephone</th>
+                            <th scope="col">Code Postal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Boucle pour afficher les produits -->
+                        <tr *ngFor="let user of users">
+                            <td><img [src]="user.image" alt="{{ user.nom }} Image"></td>                            
+                            <td>{{ user.nom }}</td>
+                            <td>{{ user.prenom }}</td>
+                            <td>{{ user.dateNaiss }}</td>
+                            <td>{{ user.role?.nom}}</td>
+                            <td>{{ user.email}}</td>
+                            <td>{{ user.telephone}}</td>
+                            <td>
+                                <button class="Btn" (click)="goToUpdate(user.id!)">
+                                  <svg class="svg" viewBox="0 0 512 512">
+                                    <path d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"></path></svg>
+                                </button>          
+                              </td>
+                              <td>
+                                <button class="Bnt" (click)="delete(user.id!)">
+                                  <svg class="svg" viewBox="0 0 448 512">
+                                    <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                  </svg> 
+                                </button>          
+                              </td>
+                        </tr>
+                        <!-- Fin de la boucle -->
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation example" class="pagination-nav" style="float: right; margin-top: 10px; margin-left: 800px;">
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" (click)="previousPage()">Previous</a>
+                    </li>
+                    
+                    <ng-container *ngFor="let pageNumber of getPageNumbers()">
+                      <li class="page-item" [ngClass]="{'active': pageNumber === currentPage+1}">
+                        <a class="page-link" (click)="goToPage(pageNumber)">{{ pageNumber }}</a>
+                      </li>
+                    </ng-container>
+                    <li class="page-item">
+                      <a class="page-link" (click)="nextPage()">Next</a>
+                    </li>
+                  </ul>
+                </nav> 
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+<!-- ... Autres éléments HTML ... -->
+<app-footer></app-footer>

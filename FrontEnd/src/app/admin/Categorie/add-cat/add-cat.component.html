@@ -1,0 +1,31 @@
+<app-header-component></app-header-component>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Colonne pour le composant de la barre latérale -->
+        <div class="col-md-2 pl-0 mb-0 pb-0 p-0 custom-md-width">
+            <app-admin-home></app-admin-home>
+        </div>
+
+        <!-- Colonne pour le formulaire d'ajout d'article -->
+        <div class="col-md-9 custom-md-9-width">
+            <form class="form" (submit)="AjouterCategorie()">
+                <p class="title">Ajouter une Categorie</p>
+                <div class="icon-container">
+                    <i class="fas fa-tags mr-2"></i>
+                </div>
+                    <div class="form-group description-images-group">
+                        <label class="flex-container">
+                            <input class="input" type="text" required="" name="name" [(ngModel)]="nouvelleCategorie.name">
+                            <span>Nom du Categorie"</span>
+                        </label>
+                        <label class="flex-container">
+                            <input class="input" type="file" accept="image/*" multiple  [(ngModel)]="nouvelleCategorie.image" name="image">
+                        </label>
+                    </div>
+            <button class="submit" type="submit">Ajouter</button>
+          </form>
+       </div>
+    </div>
+  </div>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

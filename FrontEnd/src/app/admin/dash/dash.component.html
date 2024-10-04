@@ -1,0 +1,31 @@
+<app-header-component></app-header-component>
+<!-- my-component.component.html -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- Colonne pour le composant de la barre latérale -->
+        <div class="col-md-2 pl-0 mb-0 pb-0 p-0 custom-md-width">
+            <app-admin-home></app-admin-home>
+        </div>
+        <div class="col-md-9 custom-md-9-width">
+            <div class="card-container">
+                <div class="card">
+                <i class="fa fa-user"><b style="margin-left: 15px; font-size: 30px;">{{users}}</b></i>
+                </div>
+                <div class="card">
+                <i class="fas fa-cubes mr-2"><b style="margin-left: 15px; font-size: 30px;">{{produits}}</b></i>
+
+                </div>
+                <div class="card">
+                <i class="fa fa-shopping-cart"></i>
+                {{commandes}}
+                </div>
+                <div class="card">
+                <i class="fa fa-list"><b style="margin-left: 15px; font-size: 30px;">{{categories}}</b></i>
+                </div>
+            </div>
+            <app-article-etat></app-article-etat>
+        </div>
+    </div>
+  </div>    
+<router-outlet></router-outlet>
+<app-footer></app-footer>

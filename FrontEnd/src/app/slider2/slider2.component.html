@@ -1,0 +1,10 @@
+<div id="slider-container-2">
+    <div id="slider-2" [style.transform]="'translateX(' + translateValue2 + ')'">
+      <div class="slide" *ngFor="let img of images">
+        <img [src]="img" alt="Slide">
+      </div>
+    </div>
+  
+    <div id="prev-2" (click)="showPrevSlide2()">&lt;</div>
+    <div id="next-2" (click)="showNextSlide2()">&gt;</div>
+</div>

@@ -1,0 +1,257 @@
+/* Réinitialiser les marges et les rembourrages par défaut du navigateur */
+
+
+th, td {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+img {
+    width: 80px;
+    height: 50px;
+}
+
+.custom-table {
+  margin: 20px;
+  width: 1040px;
+}
+
+.custom-table td, .custom-table th {
+  padding: 5px; /* Ajustez la valeur selon vos besoins */
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    clear: both; /* S'assurer que la carte est placée en bas de la colonne précédente */
+    margin-left: 15px;
+    width: 1080px;
+}
+
+.custom-md-9-width {
+    width: 1030px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Ajuster la marge en bas si nécessaire */
+    background-color: rgb(0, 179, 9);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    /* Déplacer le bouton vers la droite */
+    margin-left: 895px;
+}
+
+.orange-button {
+    background-color: orange;
+    float: left;
+    width: 250px;
+    margin-left: 15px;
+}
+   
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+
+.button:hover .icon {
+    transform: translate(4px);
+}
+
+.button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+.Btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40px;
+    height: 30px;
+    border: none;
+    padding: 0px 20px;
+    background-color: #19A7CE;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #146C94;
+    transition-duration: .3s;
+  }
+  
+  .svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: .3s;
+  }
+  
+  .Btn:hover {
+    color: transparent;
+  }
+  
+  .Btn:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+  }
+  
+  .Btn:active {
+    transform: translate(3px , 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px #146C94;
+  }
+
+  .Bnt {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40px;
+    height: 30px;
+    border: none;
+    padding: 0px 20px;
+    background-color: #ff3636;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #C70039;
+    transition-duration: .3s;
+    margin-right: 5px;
+  }
+  
+  .svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: .3s;
+  }
+  
+  .Bnt:hover {
+    color: transparent;
+  }
+  
+  .Bnt:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+  }
+  
+  .Bnt:active {
+    transform: translate(3px , 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px #C70039;
+  }
+
+
+
+  .group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+   
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: #6a9835;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #629e22;
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    top: 50%; /* Center the icon vertically */
+    transform: translate(-50%, -50%);
+    width: 1rem;
+    height: 1rem;
+   }

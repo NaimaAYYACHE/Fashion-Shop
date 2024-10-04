@@ -1,0 +1,75 @@
+<app-header-component></app-header-component>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Colonne pour le composant de la barre latérale -->
+        <div class="col-md-2 pl-0 mb-0 pb-0 p-0 custom-md-width">
+            <app-admin-home></app-admin-home>
+        </div>
+
+        <!-- Colonne pour le formulaire d'ajout d'article -->
+        <div class="col-md-9 custom-md-9-width">
+            <form class="form" (submit)="ajouterProduit()">
+                <p class="title">Ajouter un Article</p>
+                <div class="flex">
+                    <!-- Ajouter une liste déroulante pour les catégories -->
+                    <div class="form-group">
+                        <!-- Ajoutez votre liste déroulante de catégories ici -->
+                        <label class="category-dropdown">
+                            <select class="input" required="" name="categorie" [(ngModel)]="produit.categorie!.id">
+                                <option   selected>Choisir une Catégorie</option>
+                                <option *ngFor="let cat of categories" [value]="cat.id">{{cat.name}}</option>
+                              </select>
+                              
+                        </label>
+                    </div>
+
+                    <!-- Colonne pour le bouton "Ajouter une nouvelle catégorie" -->
+                    <div class="col-md-6">
+                        <label>
+                            <!-- Bouton pour ajouter une nouvelle catégorie -->
+                            <button type="button" class="add-category-btn">Ajouter une nouvelle catégorie</button>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Groupe pour "Nom du produit", "Quantité", "Prix", "Remise" -->
+                <!-- Groupe pour "Nom du produit", "Quantité", "Prix", "Remise" -->
+<div class="form-group">
+    <label>
+        <input class="input" type="text" required="" style="width: 250px;" [(ngModel)]="produit.name" name="name">
+        <span>Nom du produit</span>
+    </label>
+    <label>
+        <input class="input" type="number" style="width: 245px; margin-left: 10px;" required=""  [(ngModel)]="produit.quantite" name="quantite"  >
+        <span style="margin-left: 10px;">Quantité</span>
+    </label>
+    <label>
+        <input class="input" type="number" style="width: 245px; margin-left: 10px;" required="" [(ngModel)]="produit.prix" name="prix" >
+        <span style="margin-left: 10px;">Prix</span>
+    </label>
+    <label>
+        <input class="input" type="number" style="width: 245px; margin-left: 10px;" required="" [(ngModel)]="produit.remise" name="remise">
+        <span style="margin-left: 10px;">Remise</span>
+    </label>
+</div>
+
+<!-- Groupe pour "Description" et "Choisir des images" -->
+<div class="form-group description-images-group">
+    <label class="flex-container">
+        <textarea class="input" required="" name="description" [(ngModel)]="produit.description" ></textarea>
+        <span>Description</span>
+    </label>
+    <label class="flex-container">
+        <input class="input" type="file" accept="image/*" multiple  [(ngModel)]="produit.image" name="image">
+    </label>
+</div>
+
+
+
+                <button class="submit" type="submit">Ajouter</button>
+            </form>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
