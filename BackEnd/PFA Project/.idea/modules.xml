@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Auth-service/Auth-service.iml" filepath="$PROJECT_DIR$/../Auth-service/Auth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Catalogue-service/Catalogue-service.iml" filepath="$PROJECT_DIR$/../Catalogue-service/Catalogue-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Commande-service/Commande-service.iml" filepath="$PROJECT_DIR$/../Commande-service/Commande-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Gateway-service/Gateway-service.iml" filepath="$PROJECT_DIR$/../Gateway-service/Gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PFA Project.iml" filepath="$PROJECT_DIR$/PFA Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../config-service/config-service.iml" filepath="$PROJECT_DIR$/../config-service/config-service.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dcfd5800-89e3-46dc-8498-1b324acf9323" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PFA Project.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/config" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2ZXfLtl7eiaQvba66CRyvyePmiq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AuthServiceApplication.executor": "Run",
+    "Application.CatalogueServiceApplication.executor": "Run",
+    "Application.CommandeServiceApplication.executor": "Run",
+    "Application.ConfigServiceApplication.executor": "Run",
+    "Application.GatewayServiceApplication.executor": "Run",
+    "JUnit.All in Catalogue-service.executor": "Run",
+    "JUnit.All in Gateway-service (1).executor": "Run",
+    "JUnit.All in Gateway-service.executor": "Run",
+    "JUnit.All in config-service (1).executor": "Run",
+    "JUnit.All in config-service (2).executor": "Run",
+    "JUnit.All in config-service.executor": "Run",
+    "JUnit.ConfigServiceApplicationTests.contextLoads.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelOrder2": "2",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth2": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/LENOVO/IdeaProjects/PFA/PFA Project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "build.tools",
+    "spring.configuration.checksum": "a5786a0d49219745bc9ceabf6c2e4721",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.sid.Commandeservice.services" />
+      <recent name="org.sid.Authservice.service" />
+      <recent name="org.sid.Catalogueservice.services" />
+      <recent name="org.sid.Paiementservice.enums" />
+      <recent name="org.sid.Paiementservice.mo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\PFA\Catalogue-service\src\main\resources\static\images" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\PFA\PFA Project\config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GatewayServiceApplication">
+    <configuration name="AuthServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sid.Authservice.AuthServiceApplication" />
+      <module name="Auth-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sid.Authservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CatalogueServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sid.Catalogueservice.CatalogueServiceApplication" />
+      <module name="Catalogue-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sid.Catalogueservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandeServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sid.Commandeservice.CommandeServiceApplication" />
+      <module name="Commande-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sid.Commandeservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="emsi.sid.configservice.ConfigServiceApplication" />
+      <module name="config-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="emsi.sid.configservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.sid.Gatewayservice.GatewayServiceApplication" />
+      <module name="Gateway-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sid.Gatewayservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.Authservice.AuthServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CatalogueServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Catalogue-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.Catalogueservice.CatalogueServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommandeServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Commande-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.Commandeservice.CommandeServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="emsi.sid.configservice.ConfigServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.Gatewayservice.GatewayServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LivraisonServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Livraison-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.Livraisonservice.LivraisonServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaiementServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Paiement-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.Paiementservice.PaiementServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilisateurServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Utilisateur-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.Utilisateurservice.UtilisateurServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AuthServiceApplication" />
+      <item itemvalue="Application.CatalogueServiceApplication" />
+      <item itemvalue="Application.CommandeServiceApplication" />
+      <item itemvalue="Application.ConfigServiceApplication" />
+      <item itemvalue="Application.GatewayServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CommandeServiceApplication" />
+        <item itemvalue="Application.AuthServiceApplication" />
+        <item itemvalue="Application.CatalogueServiceApplication" />
+        <item itemvalue="Application.GatewayServiceApplication" />
+        <item itemvalue="Application.ConfigServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcfd5800-89e3-46dc-8498-1b324acf9323" name="Changes" comment="" />
+      <created>1702573299688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702573299688</updated>
+      <workItem from="1702573299886" duration="19266000" />
+      <workItem from="1702646683695" duration="9107000" />
+      <workItem from="1702669511930" duration="6385000" />
+      <workItem from="1702846289401" duration="3554000" />
+      <workItem from="1703148392525" duration="9394000" />
+      <workItem from="1703183004084" duration="1555000" />
+      <workItem from="1703186351958" duration="520000" />
+      <workItem from="1703191653461" duration="5369000" />
+      <workItem from="1703250666680" duration="848000" />
+      <workItem from="1703947637685" duration="2295000" />
+      <workItem from="1703969749382" duration="6401000" />
+      <workItem from="1704025194770" duration="13490000" />
+      <workItem from="1704103060952" duration="27640000" />
+      <workItem from="1704184629520" duration="5688000" />
+      <workItem from="1704200065651" duration="1900000" />
+      <workItem from="1704209111859" duration="5034000" />
+      <workItem from="1704224382633" duration="6346000" />
+      <workItem from="1704291280132" duration="1462000" />
+      <workItem from="1704308870654" duration="5072000" />
+      <workItem from="1704355077653" duration="8087000" />
+      <workItem from="1704385303391" duration="5832000" />
+      <workItem from="1704460544008" duration="6581000" />
+      <workItem from="1704544339387" duration="6909000" />
+      <workItem from="1704569569242" duration="1643000" />
+      <workItem from="1704648654835" duration="7949000" />
+      <workItem from="1704816394607" duration="2218000" />
+      <workItem from="1705079803110" duration="5935000" />
+      <workItem from="1705093922621" duration="1237000" />
+      <workItem from="1705168444317" duration="8279000" />
+      <workItem from="1705330099600" duration="758000" />
+      <workItem from="1705400751461" duration="6940000" />
+      <workItem from="1705423288262" duration="3424000" />
+      <workItem from="1705502963717" duration="1399000" />
+      <workItem from="1705604277170" duration="1853000" />
+      <workItem from="1711029096712" duration="1626000" />
+      <workItem from="1711105521215" duration="700000" />
+      <workItem from="1711106301960" duration="2974000" />
+      <workItem from="1712053067301" duration="568000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
