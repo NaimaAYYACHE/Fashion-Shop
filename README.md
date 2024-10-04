@@ -6,15 +6,13 @@ Fashion-Shop est une application de gestion d'une boutique de mode, développée
 - **Gestion des produits** : Ajouter, modifier, supprimer des produits.
 - **Gestion des utilisateurs** : Inscription, connexion, et gestion des profils utilisateurs.
 - **Gestion des commandes** : Suivi des commandes passées par les utilisateurs.
-- **Authentification et Autorisation** : Utilisation de Keycloak pour la gestion des rôles et des permissions (OpenID Connect, OAuth2).
 
 ## Technologies utilisées
 
 - **Frontend** : Angular 14, HTML5, CSS3, Bootstrap 5.
-- **Backend** : Spring Boot, Java 11, Spring Data JPA, Hibernate, MariaDB.
-- **Sécurité** : Keycloak, OAuth2, JWT (JSON Web Tokens).
-- **Base de données** : MariaDB.
-- **Outils de développement** : Maven, Git, GitHub.
+- **Backend** : Spring Boot, Spring Data JPA, Hibernate, MariaDB , spring cloud ....
+- **Base de données** : MySQL.
+- **Outils de développement** : Maven, Git, GitHub , visual studio , intillj IDEA.
 
 ## Prérequis
 
@@ -24,8 +22,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 - **Angular CLI**
 - **Java 11**
 - **Maven**
-- **MariaDB** ou MySQL pour la base de données
-- **Keycloak** pour la gestion des utilisateurs et des rôles
+- **MySQL**  pour la base de données
 
 ## Installation
 
