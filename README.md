@@ -24,11 +24,9 @@ Avant de commencer, assurez-vous d'avoir installé :
 - **Maven**
 - **MySQL**  pour la base de données
 
-## Installation
+## Présentation du projet
 
-### Cloner le projet
+Vous pouvez visionner la vidéo de présentation de mon projet ici : 
+[Lien vers la vidéo](https://drive.google.com/file/d/1axvgszyIwUTlXWFm8KCA1yJyQt_OoOuh/view?usp=sharing)
 
-```bash
-git clone https://github.com/NaimaAYYACHE/Fashion-Shop.git
-cd Fashion-Shop
 
