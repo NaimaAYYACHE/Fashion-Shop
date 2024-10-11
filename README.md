@@ -1,5 +1,6 @@
 # Fashion-Shop
 Fashion-Shop est une application de gestion d'une boutique de mode, développée en utilisant des technologies Full Stack comme Angular pour le frontend et Spring Boot pour le backend. Cette application permet la gestion des produits, des utilisateurs, et des commandes de manière efficace.
+![Design sans titre (4)](https://github.com/user-attachments/assets/c58fb49a-457f-4130-84a2-63b79122d1af)
 
 ## Fonctionnalités principales
 
